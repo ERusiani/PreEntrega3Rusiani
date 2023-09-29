@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "DellaRespira";
+    src: url("../assets/Fonts/DellaRespira-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DellaRespira";
+    background-color: rgb(244, 174, 173, 1);
+}
+
+header {
+    background-color: rgb(159, 113, 113);
+    padding: 50px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(74, 53, 52);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    color: black;
+    margin: 30px;
+}
+
+main div {
+    font-size: 100%;
+    font-weight: bolder;
+}
+
+main div span {
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+.foto-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.foto {
+    text-align: center;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.iconoSocial {
+    font-size: 24px;
+    color: rgb(159, 113, 113);
+    transition: color 0.2s;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.iconoSocial:hover {
+    color: rgb(74, 53, 52);
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(244, 174, 173, 1);
+    border: none;
+    border-radius: 5px;
+    color: rgb(159, 113, 113);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(74, 53, 52);
+}
+
+.button2 {
+    width: 50%; 
+    padding: 8px; 
+    background-color:rgb(244, 174, 173, 1);
+    border: none;
+    border-radius: 5px;
+    color: rgb(159, 113, 113);
+    font-size: 16px; 
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+.button2:hover {
+    background-color:rgb(74, 53, 52);
+}
+
+.select{
+    width: 50%; 
+    padding: 8px; 
+    background-color:rgb(244, 174, 173, 1);
+    border: none;
+    border-radius: 5px;
+    color: rgb(159, 113, 113);
+    font-size: 16px; 
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+.producto img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.producto {
+    text-align: center; 
+    margin-bottom: 20px; 
+    border: 1px solid #ddd; 
+}
+
+
