@@ -1,0 +1,227 @@
+$font-family: "DellaRespira";
+$primary-color: rgb(159, 113, 113);
+$secondary-color: rgb(74, 53, 52);
+$accent-color: rgb(244, 174, 173, 1);
+
+@mixin social-icon {
+    font-size: 24px;
+    color: $primary-color;
+    transition: color 0.2s;
+    text-decoration: none;
+    margin: 0 10px;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+@font-face {
+    font-family: $font-family;
+    src: url("../assets/Fonts/DellaRespira-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $accent-color;
+}
+
+header {
+    background-color: $primary-color;
+    padding: 50px;
+    text-align: center;
+}
+
+nav {
+    background-color: $secondary-color;
+    text-align: center;
+    .navbar {
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-right: 20px;
+
+            a {
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+main {
+    text-align: center;
+    color: black;
+    margin: 30px;
+
+    div {
+        font-size: 100%;
+        font-weight: bolder;
+
+        span {
+            text-align: justify;
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    }
+
+    .container {
+        max-width: 4000px;
+        margin: 0 auto;
+        width: 100%;
+
+        .foto-container {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns:repeat(auto-fit, 100%);
+            gap: 35px;
+        }
+
+        .foto {
+            text-align: center;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            margin-bottom: 20px;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    #fotoIndex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-content: center;
+        gap: 20px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+footer {
+    text-align: center;
+    font-weight: bold;
+
+    .iconoSocial {
+        @include social-icon;
+    }
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .form-group {
+        margin-bottom: 20px;
+
+        .label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            background-color: $accent-color;
+            border: none;
+            border-radius: 5px;
+            color: $primary-color;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $secondary-color;
+            }
+        }
+
+        .button2 {
+            width: 50%;
+            padding: 8px;
+            background-color: $accent-color;
+            border: none;
+            border-radius: 5px;
+            color: $primary-color;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+
+            &:hover {
+                background-color: $secondary-color;
+            }
+        }
+
+        .select {
+            width: 50%;
+            padding: 8px;
+            background-color: $accent-color;
+            border: none;
+            border-radius: 5px;
+            color: $primary-color;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    }
+}
+
+.producto {
+    img {
+        max-width: 100%;
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+        
+    }
+    img:hover {
+        transform: scale(2, 1.5);
+    }
+
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
