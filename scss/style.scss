@@ -215,10 +215,10 @@ footer {
         height: 500px;
         display: block;
         margin: 0 auto;
-        
+        transition: transform .2s;
     }
     img:hover {
-        transform: scale(2, 1.5);
+        transform: scale(1.5);
     }
 
     text-align: center;
